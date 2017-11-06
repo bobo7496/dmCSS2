@@ -1,0 +1,263 @@
+/* CSS Document */
+
+@viewport {
+
+zoom: 1.0;
+
+width: extend-to-zoom;
+
+}
+
+@-ms-viewport {
+
+zoom: 1.0;
+
+width: extend-to-zoom;
+
+}
+
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Restore styling for lists, em, and strong*/
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-left: 2em;
+}
+
+ol ol, ul ol {
+  list-style-type: lower-latin;
+  list-style-position: inside;
+  margin-left: 2em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Custom Styles */
+/*for mobile screens up to 479 wide*/
+#animation-frame {
+	background: #aaa;
+	width: 500px;
+	height: 300px;
+	border: solid #000 1px;
+	margin: 2rem auto;
+	padding: 0.5rem;
+	overflow: hidden;
+}
+
+h1 {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 275%;
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	left: -300px;
+	animation: presents 1s ease-in-out 2s 1 forwards;
+}
+
+@keyframes presents {
+	0%{
+		left: -300px;
+		opacity: 0;
+	}
+
+	50% {
+		left: 100px;
+		opacity: .5;
+	}
+
+	100% {
+		left: 50px;
+		opacity: 1;
+	}
+}
+
+.body-area {
+	margin-top: 2rem;
+	line-height: 1.5;
+}
+
+.body-area h2 {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 150%;
+	font-family: Arial, Helvetica, sans-serif;
+	animation: item 1s ease-out 2s 1 forwards;
+	position: relative;
+	text-align: center;
+	top: 250px;
+}
+
+@keyframes item {
+	0%{
+		top: 375px;
+		opacity: 0;
+	}
+
+	50% {
+		top: -175px;
+		opacity: .5;
+	}
+
+	100% {
+		top: 50px;
+		opacity: 1;
+	}
+}
+
+.slogan {
+	font-family: Arial, Helvetica, sans-serif;
+	left: 510px;
+	position: relative;
+	font-style: italic;
+	font-size: 105%;
+	animation: slogan 1s linear 2s 1 forwards;
+}
+
+@keyframes slogan {
+	0%{
+		left: 510px;
+		opacity: 0;
+	}
+
+	50% {
+		left: -200px;
+		opacity: .5;
+	}
+
+	100% {
+		left: 0px;
+		opacity: 1;
+	}
+}
+
+#logo {
+	float: left;
+	margin-right: 1.5rem;
+	position: relative;
+	top: -70px;
+	animation: logo 1s ease-in-out 2s 1 forwards;
+}
+
+@keyframes logo {
+	0%{
+		top: -25px;
+		opacity: 0;
+	}
+
+	50% {
+		top: 75px;
+		opacity: .5;
+	}
+
+	100% {
+		top: 0px;
+		opacity: 1;
+	}
+}
+
+#Roomba {
+	position: relative;
+	left: 125px;
+	top: -265px;
+	animation: roomba 3s ease-in 6s 1 forwards;
+}
+
+@keyframes roomba {
+	0%{
+		top: -265px;
+		opacity: 1;
+	}
+
+	50% {
+		left: -200px;
+		top: 200px;
+		opacity: 1;
+	}
+
+	75% {
+		left: 75px;
+		top: 200px;
+		opacity: 1;
+	}
+
+	100% {
+		left: 125;
+		top: 20px;
+		opacity: 1;
+	}
+}
+
+/*for screens 480 wide*/
+@media screen and (min-width: 480px){
+
+}
